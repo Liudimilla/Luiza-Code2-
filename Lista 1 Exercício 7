@@ -1,0 +1,29 @@
+# MAGALU
+Exercicios
+package br.com.magalu.Aulas;
+
+import java.util.Scanner;
+
+public class CalculoDias {
+
+	public CalculoDias() {
+		public static void main(String[] args) {
+			int Ndia, Nano , dia, ano, diasdevida;
+			
+			Scanner sc = new Scanner(System.in);
+			
+			System.out.println("Digite sua idade");
+			Ndia = sc.nextInt();
+			System.out.println("Digite o seu ano de nascimento");
+			Nano = sc.nextInt();
+			
+			dia = Ndia * 365;
+			ano = Nano - 2021;
+			diasdevida = dia * ano;
+			
+			System.out.println("Dias de vida = " + diasdevida);
+			
+		}
+	}
+
+}
