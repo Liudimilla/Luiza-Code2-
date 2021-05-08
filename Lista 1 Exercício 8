@@ -1,0 +1,41 @@
+# MAGALU
+Exercicios
+package br.com.gama.Aula2;
+
+import java.util.Scanner;
+
+public class Votos {
+
+	public Votos() {
+		
+	}
+
+	public static void main(String[] args) {
+		int br, nul, val, el, ttal;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite quantos eleitores");
+		el = sc.nextInt();
+		System.out.println("Digite quantos votos brancos");
+		br = sc.nextInt();
+		System.out.println("Digite quantos votos nulos");
+		nul = sc.nextInt();
+		System.out.println("Digite quantos votos validos");
+		val = sc.nextInt();
+		
+		ttal = el + br + nul + val;
+		System.out.println("Tota de votos = " + ttal);
+		
+		        ttal = el - br;
+		        System.out.println("Tota de votos branos = " + ttal);
+			
+				ttal = el - nul;
+				System.out.println("Tota de votos nulos = " + ttal);
+				
+				ttal = el - val;
+				System.out.println("Tota de votos validos= " + ttal);
+				
+	}
+
+}
