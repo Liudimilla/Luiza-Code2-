@@ -1,0 +1,25 @@
+# MAGALU
+Exercicios
+package br.com.magalu.Aulas;
+
+import java.util.Scanner;
+
+public class Antecessor {
+
+	private static Scanner sc;
+
+	public static void main (String[] args) {
+	int num , ant ;
+		
+		sc = new Scanner(System.in);
+		
+		
+		System.out.println("Digite um numero");
+		num = sc.nextInt();
+		
+		ant = num - 1;
+		
+		System.out.println("Digite um numero:" + ant);
+	}
+}
+
