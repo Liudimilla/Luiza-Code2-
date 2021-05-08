@@ -1,0 +1,63 @@
+# MAGALU
+Exercicios
+package Cadastro;
+
+public class Cadastro {
+
+	String nome, cargo;
+	float altura;
+	String idade;
+	int matricula;
+	static int m = 1;
+	
+public Cadastro() {
+	matricula = m++;
+}
+	public void cadastrar(String nome, String idade, float altura) {
+		this.nome = nome;
+		this.idade = idade;
+		this.altura = altura;
+
+	}
+	public void exibir() {
+		System.out.println("Nome:" + nome +"\nMatricula:"+ matricula);
+		System.out.println("\tIdade:" + idade +"\n\taltura:"+ altura);
+	}
+	
+}
+class UsarCadastro {
+        public static void main(String[] args) {
+	
+		
+			Cadastro f1 = new Cadastro();
+			Cadastro f2 = new Cadastro();
+			Cadastro f3 = new Cadastro();
+			Cadastro f4 = new Cadastro();
+			Cadastro f5 = new Cadastro();
+			Cadastro f6 = new Cadastro();
+			Cadastro f7 = new Cadastro();
+			Cadastro f8 = new Cadastro();
+			Cadastro f9 = new Cadastro();
+			Cadastro f10 = new Cadastro();
+			f1.cadastrar("Milla","18", 1.750F);
+			f2.cadastrar("Carla","17", 1.50F);
+			f3.cadastrar("Pedro","19", 1.150F);
+			f4.cadastrar("Cassia","20", 1.60F);
+			f5.cadastrar("julio","48", 1.750F);
+			f6.cadastrar("Cesar","25", 1.60F);
+			f7.cadastrar("Paulo","28", 1.850F);
+			f8.cadastrar("marcos","65", 1.60F);
+			f9.cadastrar("Paulo","28", 1.750F);
+			f10.cadastrar("marcos","65", 1.90F);			
+			f1.exibir();
+			f2.exibir();
+			f3.exibir();
+			f4.exibir();
+			f5.exibir();
+			f6.exibir();
+			f7.exibir();
+			f9.exibir();
+			f10.exibir();
+		}
+		
+	}
