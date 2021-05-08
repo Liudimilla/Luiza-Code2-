@@ -1,0 +1,32 @@
+# MAGALU
+Exercicios
+package br.com.gama.Aula2;
+
+import java.util.Scanner;
+
+public class Reajuste {
+
+	
+		public static void main(String[] args) {
+			
+		     float reaj,sal,sal2,sal3;
+		     
+		     Scanner sc = new Scanner(System.in);
+		     
+		     System.out.println("Digite o seu salario atual ");
+				sal = sc.nextInt();
+				
+				reaj = 18;
+				
+				
+				sal = (sal*18)/100;
+			     sal2 = sal + sal;
+			      sal3 = sal2 * 12;
+			      
+				
+			      
+			      System.out.println("\nVoce recebera um reajuste de : " + reaj);
+			      System.out.println("\n O seu  novo salario sera\n" + sal2);
+			      System.out.println("\n E no decorre de um ano voce tera recebido \n" + sal3);
+		}
+	}
