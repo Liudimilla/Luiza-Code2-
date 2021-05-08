@@ -1,0 +1,26 @@
+# MAGALU
+Exercicios
+package br.com.magalu.Aulas;
+
+import java.util.Scanner;
+
+public class Retangulo {
+
+	
+		public static void main(String[] args) {
+		double base, altura, arearetangulo;
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Digite o valor da base");
+		base = sc.nextDouble();
+		System.out.println("Digite o valor da base");
+		altura = sc.nextDouble();
+		
+		
+		
+		arearetangulo = base * altura; 
+		
+		System.out.println("A area de um retangulo= " + arearetangulo);
+	}
+	}
