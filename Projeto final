@@ -1,6 +1,6 @@
 # MAGALU
 Exercicios
-create table cliente(
+/*create table cliente(
 			cod_cliente	number,
 			nm_cliente	varchar2(30) not null,
 			telefone	number(10) not null,
@@ -51,3 +51,16 @@ values(1,'08-oct-12', 2, 1);
 insert into pedido
 (cod_pedido, dt_pedido, cod_cliente, cod_produto)
 values(2,'18-oct-12', 1, 2);
+
+select * from cliente;
+select * from produto;
+select * from pedido;
+
+alter table pedido drop column cod_produto
+
+SELECT cod_produto, nm_produto FROM produto
+WHERE cod_produto = 1
+*/
+SELECT cliente.cod_cliente, cliente.nm_cliente, nm_produto
+FROM cliente, pedido, produto
+WHERE cliente.cod_cliente = pedido.cod_cliente
