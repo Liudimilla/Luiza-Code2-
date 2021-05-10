@@ -1,0 +1,53 @@
+# MAGALU
+Exercicios
+create table cliente(
+			cod_cliente	number,
+			nm_cliente	varchar2(30) not null,
+			telefone	number(10) not null,
+			cpf		number(11) not null,
+			logradouro	varchar2(30) not null,
+			numero		number	not null,
+			complemento	varchar2(30) not null,
+			bairro		varchar2(30) not null,
+			cep		number(8) not null
+			);
+
+
+create table produto(
+			cod_produto	number,
+			nm_produto	varchar2(30) not null,
+			vl_unitario	number(15,2) not null,
+			qtde_estoque	number not null
+			);
+
+
+create table pedido(
+			cod_pedido	number,
+			dt_pedido	date not null,
+			cod_cliente	number not null,
+			cod_produto	number not null
+			);
+
+insert into cliente
+(cod_cliente, nm_cliente, telefone, cpf, logradouro, numero, complemento, bairro, cep)
+values(1, 'Rafaela', 999999999, 33333333333, 'Rua Sao Paulo', 01, 'Casa', 'Vila Prudente', 1111111);
+
+insert into cliente
+(cod_cliente, nm_cliente, telefone, cpf, logradouro, numero, complemento, bairro, cep)
+values(2, 'Jaqueline', 777777777, 44444444444, 'Rua Rio de Janeiro', 20, 'Casa', 'Vila Formosa', 2222222);
+
+insert into produto
+(cod_produto, nm_produto, vl_unitario, qtde_estoque)
+values(1, 'Celular', 799.90, 500);
+
+insert into produto
+(cod_produto, nm_produto, vl_unitario, qtde_estoque)
+values(2, 'Computador', 1300.99, 300);
+
+insert into pedido
+(cod_pedido, dt_pedido, cod_cliente, cod_produto)
+values(1,'08-oct-12', 2, 1);
+
+insert into pedido
+(cod_pedido, dt_pedido, cod_cliente, cod_produto)
+values(2,'18-oct-12', 1, 2);
